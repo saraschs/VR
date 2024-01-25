@@ -1,8 +1,11 @@
 <html>
   <head>
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+
   </head>
+
   <body>
+
     <a-scene>
 
       <a-assets>
@@ -21,63 +24,261 @@
       <a-mixin id="wall"
                geometry=" height: 2; depth: 0.5"
                material="src: ./mur.jpg ; side: double"></a-mixin>
+
+
                
+<!-- base  -->
+<a-entity 
+camera look-controls wasd-controls="acceleration:10" 
+position="0 1.6 0">
+</a-entity>
+
+<a-plane 
+ position="0 0 0" 
+ rotation="90 0 0"
+ width="4" 
+ height="4" 
+ side="double" 
+ material="src: ./sol2.jpg">
+</a-plane>
+
+<a-box 
+position="0 2 0"  
+width="4" 
+height="0.1" 
+depth="4" 
+side="double" 
+material="src: ./ceiling.jpg">
+</a-box>
+
+<a-sky 
+material="src: ./sky.jpg">
+</a-sky>
+<!-- fin base -->
+
 
      
-     
-      <a-plane position="0 1 -2" material="src: ./plan.jpg ; side: double" rotation="0 0 0" height="2"width="4"></a-plane>
-      <a-plane position="-2 1 0.25" mixin="wall" rotation="0 90 0" width="3.5"></a-plane>
-      <a-plane position="-1.75 1 -1.5" mixin="wall" rotation="0 0 0" width="0.5"></a-plane>
-      <a-plane position="-1.5 1 0" mixin="wall" rotation="0 90 0" width="3"></a-plane>
-      <a-plane position="0 1 -0.5" mixin="wall" rotation="0 90 0" width="1"></a-plane>
-      <a-plane position="0 1 1.745" material="src: ./sang.jpg ; side: double" rotation="0 90 0" width="0.5" height="2" depth="0.5"></a-plane>
-      <a-plane position="-0.75 1 1.2" mixin="wall" rotation="0 0 0" width="0.5"></a-plane>
-      <a-plane position="-0.75 1 -1.5" mixin="wall" rotation="0 0 0" width="0.5"></a-plane>
-      <a-plane position="-0.5 1 -1" mixin="wall" rotation="0 90 0" width="1"></a-plane>
-      <a-plane position="-0.5 1 1.6" mixin="wall" rotation="0 90 0" width="0.810"></a-plane>
-      <a-plane position="-1 1 2" mixin="wall" rotation="0 0 0" width="2"></a-plane>
-      <a-plane position="0.24 1 0.5" mixin="wall" rotation="0 0 0" width="0.5"></a-plane>
-      <a-plane position="-0.75 1 0.5" mixin="wall" rotation="0 0 0" width="0.5"></a-plane>
-      <a-plane position="-1 1 -0.5" mixin="wall" rotation="0 90 0" width="2"></a-plane>
-      <a-plane position="0.5 1 0" mixin="wall" rotation="0 0 0" width="1"></a-plane>
-      <a-plane position="0.5 1 1" mixin="wall" rotation="0 0 0" width="1"></a-plane>
-      <a-plane position="1 1 0.5" mixin="wall" rotation="0 90 0" width="1"></a-plane>
-      <a-plane position="1.5 1 0" mixin="wall" rotation="0 90 0" width="3"></a-plane>
-      <a-plane position="0.747 1 1.5" material="src: ./mur_sang.jpg ; side: double" side="double" rotation="0 0 0" width="1.5" height="2" depth="0.5"></a-plane>
-      <a-plane position="0 1 0.75" mixin="wall" rotation="0 90 0" width="0.5"></a-plane>
-      <a-plane position="2 1 -0.75"  material="src: ./mur_sang.jpg ; side: double" rotation="0 90 0" width="2.5" height="2" depth="0.5"></a-plane>
-      <a-plane position="-0.5 1 -1.75" mixin="wall" rotation="0 90 0" width="0.5"></a-plane>
-      <a-plane position="0.75 1 -0.5" mixin="wall" rotation="0 0 0" width="1.5"></a-plane>
-      <a-plane position="1 1 2" material="src: ./mur_sang.jpg ; side: double" rotation="0 0 0" width="2" height="2" depth="0.5"></a-plane>
-      <a-plane position="0.25 1 -1" mixin="wall" rotation="0 0 0" width="0.5"></a-plane>
-      <a-plane position="2 1 1.25" material="src: ./mur_sang.jpg ; side: double" rotation="0 90 0" width="1.5" height="2" depth="0.5"></a-plane>
-      <a-plane position="0.6 1 1.731" rotation="0 90 0" width="0.480" height="1.750" depth=" 0.4" side="front" material="src: ./monstre.png; side: front; transparent: true"></a-plane>
+         <!-- murs normaux -->
 
-      <a-entity camera look-controls wasd-controls="acceleration:10" position="0 1.6 0"></a-entity>
-     
+      <a-plane 
+        position="0 1 -2" 
+        mixin="wall"
+        rotation="0 0 0" 
+        height="2"
+        width="4">
+      </a-plane>
+
+      <a-plane 
+        position="-2 1 0.25" 
+        mixin="wall"
+        rotation="0 90 0" 
+        width="3.5">
+      </a-plane>
+
+      <a-plane 
+        position="-1.75 1 -1.5" 
+        mixin="wall" 
+        rotation="0 0 0" 
+        width="0.5">
+      </a-plane>
+
+      <a-plane 
+         position="-1.5 1 0" 
+         mixin="wall" 
+         rotation="0 90 0" 
+         width="3">
+      </a-plane>
+
+      <a-plane 
+         position="0 1 -0.5" 
+         mixin="wall" 
+         rotation="0 90 0" 
+         width="1">
+      </a-plane>
+
+      <a-plane 
+         position="-0.75 1 1.2" 
+         mixin="wall" 
+         rotation="0 0 0" 
+         width="0.5">
+      </a-plane>
+
+      <a-plane 
+         position="-0.75 1 -1.5" 
+         mixin="wall" 
+         rotation="0 0 0" 
+         width="0.5">
+      </a-plane>
+
+      <a-plane 
+         position="-0.5 1 -1" 
+         mixin="wall" 
+         rotation="0 90 0" 
+         width="1">
+      </a-plane>
+
+      <a-plane 
+         position="-0.5 1 1.6" 
+         mixin="wall" 
+         rotation="0 90 0" 
+         width="0.810">
+      </a-plane>
+
+      <a-plane 
+         position="-1 1 2" 
+         mixin="wall" 
+         rotation="0 0 0" 
+         width="2">
+      </a-plane>
+
+      <a-plane 
+         position="0.24 1 0.5" 
+         mixin="wall" 
+         rotation="0 0 0" 
+         width="0.5">
+      </a-plane>
+
+      <a-plane 
+         position="-0.75 1 0.5" 
+         mixin="wall" 
+         rotation="0 0 0" 
+         width="0.5">
+      </a-plane>
+
+      <a-plane 
+         position="-1 1 -0.5" 
+         mixin="wall" 
+         rotation="0 90 0" 
+         width="2">
+      </a-plane>
+
+      <a-plane 
+         position="0.5 1 0" 
+         mixin="wall" 
+         rotation="0 0 0" 
+         width="1">
+      </a-plane>
+
+      <a-plane 
+         position="0.5 1 1" 
+         mixin="wall" 
+         rotation="0 0 0" 
+         width="1">
+      </a-plane>
+
+      <a-plane 
+         position="1 1 0.5" 
+         mixin="wall" 
+         rotation="0 90 0" 
+         width="1">
+      </a-plane>
+
+      <a-plane 
+         position="1.5 1 0" 
+         mixin="wall" 
+         rotation="0 90 0" 
+         width="3">
+      </a-plane>
+
+      <a-plane 
+         position="0 1 0.75" 
+         mixin="wall" 
+         rotation="0 90 0" 
+         width="0.5">
+      </a-plane>
+
+      <a-plane 
+         position="-0.5 1 -1.75" 
+         mixin="wall" 
+         rotation="0 90 0" 
+         width="0.5">
+      </a-plane>
+
+      <a-plane 
+         position="0.75 1 -0.5" 
+         mixin="wall" 
+         rotation="0 0 0" 
+         width="1.5">
+      </a-plane>
+
+      <a-plane 
+         position="0.25 1 -1" 
+         mixin="wall" 
+         rotation="0 0 0" 
+         width="0.5">
+      </a-plane>
+       <!-- fin des murs normaux -->
 
 
 
+       <!-- vieux murs -->
 
-
-
-
+      <a-plane 
+         position="0.747 1 1.5" 
+         material="src: ./mur_sang.jpg ; side: double" 
+         side="double" 
+         rotation="0 0 0" 
+         width="1.5" 
+         height="2" 
+         depth="0.5">
+      </a-plane>
     
+      <a-plane 
+         position="2 1 -0.75"  
+         material="src: ./mur_sang.jpg ; side: double" 
+         rotation="0 90 0" 
+         width="2.5" 
+         height="2" 
+         depth="0.5">
+      </a-plane>
+     
+    <a-plane 
+      position="1 1 2" 
+      material="src: ./mur_sang.jpg ; side: double" 
+      rotation="0 0 0" 
+      width="2" 
+      height="2" 
+      depth="0.5">
+    </a-plane>
+     
+      <a-plane 
+         position="2 1 1.25" 
+         material="src: ./mur_sang.jpg ; side: double" 
+         rotation="0 90 0" 
+         width="1.5" 
+         height="2" depth="0.5">
+      </a-plane>
+      <!-- fin vieux murs -->
 
-      <a-plane position="0 0 0" 
-               rotation="90 0 0"
-               width="4" 
-               height="4" 
-               side="double" 
-               material="src: ./sol2.jpg"></a-plane>
-
-               <a-box position="0 2 0"  width="4" height="0.1" depth="4" side="double" material="src: ./ceiling.jpg"></a-box>
 
 
-      <a-sky material="src: ./sky.jpg"></a-sky>
+      <!-- coin pour le monstre -->
+
+      <a-plane 
+         position="0.6 1 1.731" 
+         rotation="0 90 0" 
+         width="0.480" 
+         height="1.750" 
+         depth=" 0.4" 
+         side="front" 
+         material="src: ./monstre.png; side: front; transparent: true">
+      </a-plane>
+
+      <a-plane 
+         position="0 1 1.745" 
+         material="src: ./sang.jpg ; side: double" 
+         rotation="0 90 0" 
+         width="0.5" 
+         height="2" 
+         depth="0.5">
+      </a-plane>
+<!-- fin coin monstre -->
 
     </a-scene>
+
+
   </body>
+
 </html>
 
 
