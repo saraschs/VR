@@ -25,7 +25,7 @@
                geometry=" height: 2; depth: 0.5"
                material="src: ./mur.jpg ; side: double"></a-mixin>
 
-
+               
                
 <!-- base  -->
 <a-entity 
@@ -57,16 +57,17 @@ material="src: ./sky.jpg">
 <!-- fin base -->
 
 
-     
-         <!-- murs normaux -->
-
       <a-plane 
         position="0 1 -2" 
-        mixin="wall"
+        material="src: ./plan.jpg ; side: double" 
         rotation="0 0 0" 
         height="2"
         width="4">
       </a-plane>
+
+
+
+      <!-- murs normaux -->
 
       <a-plane 
         position="-2 1 0.25" 
