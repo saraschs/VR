@@ -1,0 +1,128 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  </head>
+
+  <body>
+
+    <a-scene>
+        
+
+      <a-assets>
+
+        <img id="tree" src="./tree.jpg">
+        <img id="sol" src="./sol.jpg">
+
+        <a-asset-item id="feuillages" src="./assets/uploads_files_3520502_obj/obj/Bush.obj"></a-asset-item>
+        <a-asset-item id="mtl" src="./assets/uploads_files_3520502_obj/obj/Bush.mtl"></a-asset-item>
+
+        <a-asset-item id="branches" src="./assets/Cherry_tree_branch_v2_L2.123c8ae81e46-89f9-402b-9451-7388109579dd/Cherry_tree_branch_v2_L2.123c8ae81e46-89f9-402b-9451-7388109579dd/12975_Cherry_tree_branch_v2_l2.obj"></a-asset-item>
+        <a-asset-item id="bmtl" src="./assets/Cherry_tree_branch_v2_L2.123c8ae81e46-89f9-402b-9451-7388109579dd/Cherry_tree_branch_v2_L2.123c8ae81e46-89f9-402b-9451-7388109579dd/12975_Cherry_tree_branch_v2_l2.mtl"></a-asset-item>
+      
+        <a-asset-item id="oiseau1" src="./assets/bbktgbv6su-Birds/Birds/Birds.obj"></a-asset-item>
+        <a-asset-item id="oiseau1mtl" src="./assets/bbktgbv6su-Birds/Birds/Birds.mtl"></a-asset-item>
+
+        <a-asset-item id="oiseau2" src="./assets/Bird_v1_L3.123c7db4bfec-5387-44d1-8c32-7a38aa3d2dcc/Bird_v1_L3.123c7db4bfec-5387-44d1-8c32-7a38aa3d2dcc/12213_Bird_v1_l3.obj"></a-asset-item>
+        <a-asset-item id="oiseau2mtl" src="./assets/Bird_v1_L3.123c7db4bfec-5387-44d1-8c32-7a38aa3d2dcc/Bird_v1_L3.123c7db4bfec-5387-44d1-8c32-7a38aa3d2dcc/12213_Bird_v1_l3.mtl"></a-asset-item>
+
+        <a-asset-item id="oiseau3" src="./assets/Bird_v1_L3.123ca1c625e8-f968-48eb-8d84-73966713f50f/Bird_v1_L3.123ca1c625e8-f968-48eb-8d84-73966713f50f/12214_Bird_v1max_l3.obj"></a-asset-item>
+        <a-asset-item id="oiseau3mtl" src="./assets/Bird_v1_L3.123ca1c625e8-f968-48eb-8d84-73966713f50f/Bird_v1_L3.123ca1c625e8-f968-48eb-8d84-73966713f50f/12214_Bird_v1max_l3.mtl"></a-asset-item>
+
+        <a-asset-item id="ecureuil" src="./assets/Squirrel_v2_L3.123c9fcda5c4-a341-4d7d-9baa-fcb9a6fdd0d2/Squirrel_v2_L3.123c9fcda5c4-a341-4d7d-9baa-fcb9a6fdd0d2/10051_Squirrel_v2_L3.obj"></a-asset-item>
+        <a-asset-item id="ecureuilmtl" src="./assets/Squirrel_v2_L3.123c9fcda5c4-a341-4d7d-9baa-fcb9a6fdd0d2/Squirrel_v2_L3.123c9fcda5c4-a341-4d7d-9baa-fcb9a6fdd0d2/10051_Squirrel_v2_L3.mtl"></a-asset-item>
+
+        <a-asset-item id="oiseau4" src="./Bird_v1_L2.123c77487113-46bc-4af5-8792-4b19072d8388/Bird_v1_L2.123c77487113-46bc-4af5-8792-4b19072d8388/12245_Bird_v1_l2.obj"></a-asset-item>
+        <a-asset-item id="oiseau4mtl" src="./Bird_v1_L2.123c77487113-46bc-4af5-8792-4b19072d8388/Bird_v1_L2.123c77487113-46bc-4af5-8792-4b19072d8388/12245_Bird_v1_l2.mtl"></a-asset-item>
+
+        <a-asset-item id="oiseau5" src="./Bird_v1_L2.123c9058ad9c-8697-4ffd-9d12-76325274f764/Bird_v1_L2.123c9058ad9c-8697-4ffd-9d12-76325274f764/12258_Bird_v1_L2.obj"></a-asset-item>
+        <a-asset-item id="oiseau5mtl" src="./Bird_v1_L2.123c9058ad9c-8697-4ffd-9d12-76325274f764/Bird_v1_L2.123c9058ad9c-8697-4ffd-9d12-76325274f764/12258_Bird_v1_L2.mtl"></a-asset-item>
+
+        <a-asset-item id="oiseau6" src="./Bird_v1_L3.123c2876c0cc-f4de-43c8-bd8f-d38617c02796/Bird_v1_L3.123c2876c0cc-f4de-43c8-bd8f-d38617c02796/12235_Bird_v1_l3.obj"></a-asset-item>
+        <a-asset-item id="oiseau6mtl" src="./Bird_v1_L3.123c2876c0cc-f4de-43c8-bd8f-d38617c02796/Bird_v1_L3.123c2876c0cc-f4de-43c8-bd8f-d38617c02796/12235_Bird_v1_l3.mtl"></a-asset-item>
+
+      </a-assets>
+
+
+<!-- animaux -->
+     <a-entity position="1 -1.5 -0.9" scale="0.1 0.1 0.1" rotation="0 0 0" obj-model="obj: #oiseau1; mtl: #oiseau1mtl"></a-entity>
+
+     <a-entity position="0 0.4 0.8" scale="0.05 0.05 0.05" rotation="-90 20 0" obj-model="obj: #oiseau2; mtl: #oiseau2mtl"></a-entity>
+
+     <a-entity position="-0.8 0.6 0.1" scale="0.05 0.05 0.05" rotation="-90 -40 0" obj-model="obj: #oiseau3; mtl : #oiseau3mtl"></a-entity>
+
+     <a-entity position="0 0.9 0.5" scale="0.02 0.02 0.02" rotation="-90 0 0" obj-model="obj: #oiseau4; mtl: #oiseau4mtl"></a-entity>
+
+     <a-entity position="-1.12 -0.73 -1" scale="0.01 0.01 0.01" rotation="-90 0 0" obj-model="obj: #oiseau5; mtl: #oiseau5mtl"></a-entity>
+
+     <a-entity position="1 0.3 -0.9" scale="0.05 0.05 0.05" rotation="-85 200 0" obj-model="obj: #oiseau6; mtl: #oiseau6mtl"></a-entity>
+
+     <a-entity position="1.8 0.4 -1.6" scale="0.01 0.01 0.01" rotation="-90 -90 0" obj-model="obj: #ecureuil; mtl: #ecureuilmtl"></a-entity>
+<!-- animaux -->
+
+
+
+<!-- branches -->
+      <a-entity position="0.5 0 -1" scale="0.5 0.5 0.5" rotation="0 30 0" obj-model="obj: #branches; mtl: #bmtl"></a-entity>
+      <a-entity position="0 1 -1" scale="0.5 0.5 0.5" rotation="15 100 0" obj-model="obj: #branches; mtl: #bmtl"></a-entity>
+      <a-entity position="-0.8 -1 -1" scale="0.4 0.4 0.4" rotation="15 215 0" obj-model="obj: #branches; mtl: #bmtl"></a-entity>
+      <a-entity position="-1.5 0.7 -1" scale="0.4 0.4 0.4" rotation="16 125 0" obj-model="obj: #branches; mtl: #bmtl"></a-entity>
+      <a-entity position="-0.3 0 1.2" scale="0.5 0.5 0.5" rotation="0 -150 0" obj-model="obj: #branches; mtl: #bmtl"></a-entity>
+      <a-entity position="-0.8 0.6 0.4" scale="0.5 0.5 0.5" rotation="0 -200 0" obj-model="obj: #branches; mtl: #bmtl"></a-entity>
+<!-- branches -->
+
+
+
+<!-- feuillages par rangées-->
+      <a-entity position="1 2.5 0" scale="0.5 0.5 0.5" rotation="0 0 0" obj-model="obj: #feuillages; mtl:#mtl"></a-entity>
+      <a-entity position="1 2 1" scale="0.4 0.4 0.4" rotation="0 0 0" obj-model="obj: #feuillages; mtl:#mtl"></a-entity>
+      <a-entity position="1 2.3 -1" scale="0.5 0.5 0.5" rotation="0 0 0" obj-model="obj: #feuillages; mtl:#mtl"></a-entity>
+      <a-entity position="1 2.1 2" scale="0.2 0.2 0.2" rotation="0 0 0" obj-model="obj: #feuillages; mtl:#mtl"></a-entity>
+      <a-entity position="1 2 -2" scale="0.5 0.5 0.5" rotation="0 0 0" obj-model="obj: #feuillages; mtl:#mtl"></a-entity>
+
+
+      <a-entity position="-1 2 0" scale="0.3 0.3 0.3" rotation="0 0 0" obj-model="obj: #feuillages; mtl:#mtl"></a-entity>
+      <a-entity position="-1 2.5 1" scale="0.5 0.5 0.5" rotation="0 0 0" obj-model="obj: #feuillages; mtl:#mtl"></a-entity>
+      <a-entity position="-1 2.2 -1" scale="0.5 0.5 0.5" rotation="0 0 0" obj-model="obj: #feuillages; mtl:#mtl"></a-entity>
+      <a-entity position="-1 2 -2" scale="0.5 0.5 0.5" rotation="0 0 0" obj-model="obj: #feuillages; mtl:#mtl"></a-entity>
+      <a-entity position="-1 2.5 2" scale="0.5 0.5 0.5" rotation="0 0 0" obj-model="obj: #feuillages; mtl:#mtl"></a-entity>
+
+
+      <a-entity position="2 1.9 0" scale="0.5 0.5 0.5" rotation="0 0 0" obj-model="obj: #feuillages; mtl:#mtl"></a-entity>
+      <a-entity position="2 2 1" scale="0.5 0.5 0.5" rotation="0 0 0" obj-model="obj: #feuillages; mtl:#mtl"></a-entity>
+      <a-entity position="2 2.5 -1" scale="0.4 0.4 0.4" rotation="0 0 0" obj-model="obj: #feuillages; mtl:#mtl"></a-entity>
+      <a-entity position="2 2 2" scale="0.5 0.5 0.5" rotation="0 0 0" obj-model="obj: #feuillages; mtl:#mtl"></a-entity>
+      <a-entity position="2 2.3 -2" scale="0.5 0.5 0.5" rotation="0 0 0" obj-model="obj: #feuillages; mtl:#mtl"></a-entity>
+
+
+      <a-entity position="0 2.3 0" scale="0.5 0.5 0.5" rotation="0 0 0" obj-model="obj: #feuillages; mtl:#mtl"></a-entity>
+      <a-entity position="0 2 1" scale="0.5 0.5 0.5" rotation="0 0 0" obj-model="obj: #feuillages; mtl:#mtl"></a-entity>
+      <a-entity position="0 2 -1" scale="0.5 0.5 0.5" rotation="0 0 0" obj-model="obj: #feuillages; mtl:#mtl"></a-entity>
+      <a-entity position="0 2 2" scale="0.5 0.5 0.5" rotation="0 0 0" obj-model="obj: #feuillages; mtl:#mtl"></a-entity>
+      <a-entity position="0 2 -2" scale="0.5 0.5 0.5" rotation="0 0 0" obj-model="obj: #feuillages; mtl:#mtl"></a-entity>
+
+
+      <a-entity position="-2 2.2 0" scale="0.5 0.5 0.5" rotation="0 0 0" obj-model="obj: #feuillages; mtl:#mtl"></a-entity>
+      <a-entity position="-2 2 1" scale="0.5 0.5 0.5" rotation="0 0 0" obj-model="obj: #feuillages; mtl:#mtl"></a-entity>
+      <a-entity position="-2 1.9 -1" scale="0.2 0.2 0.2" rotation="0 0 0" obj-model="obj: #feuillages; mtl:#mtl"></a-entity>
+      <a-entity position="-2 2 2" scale="0.5 0.5 0.5" rotation="0 0 0" obj-model="obj: #feuillages; mtl:#mtl"></a-entity>
+      <a-entity position="-2 2.3 -2" scale="0.5 0.5 0.5" rotation="0 0 0" obj-model="obj: #feuillages; mtl:#mtl"></a-entity>
+
+
+      <a-entity position="3 2 0" scale="0.5 0.5 0.5" rotation="0 0 0" obj-model="obj: #feuillages; mtl:#mtl"></a-entity>
+<!-- feuillages  -->
+
+
+      <a-box position="0 0 0" depth="4" width="4" height="4" src="#tree" side="double"></a-box>
+      
+
+      <a-plane position="0 -1.99 0" material="src : ./sol.jpg ; side : double" height="4" width="4" rotation="90 0 0"></a-plane>
+
+
+      <a-sky color="red"></a-sky>*
+
+
+
+
+    </a-scene>
+  </body>
+</html>
