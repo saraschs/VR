@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v4.1.1/dist/aframe-extras.min.js"></script>
+</head>
+
+<body>
+    <a-scene light="defaultLightsEnabled: false">
+
+         <!-- maquette -->
+        <a-assets>
+            <img id="sunset" src="./sunset.jpg">
+            <a-asset-item id="maquette" src="./maquette2.glb"></a-asset-item>
+        </a-assets>
+
+        <a-entity gltf-model="#maquette" position="0 0 -8" scale="25 25 25" rotation="0 25 0"></a-entity>
+
+        <!-- lumiere ambiante -->
+    
+        <a-entity light="type: ambient; color: #d9800d"></a-entity>
+
+        <!-- directional -->
+
+        <a-entity light="type: directional; intensity: 0.8; distance: 20; decay: 1; color:#ffba0d" position="0 10 0"></a-entity>
+        <a-entity light="type: directional; intensity: 0.6; distance: 2; decay: 1; color:#854dff" position="5 0 -10"></a-entity>
+
+        
+
+        <!-- ciel -->
+        <a-sky src="sunset.jpg"></a-sky>
+        
+        <!-- camera -->
+        <a-entity id="rig" movement-controls="fly: true; speed: 0.3">
+        <a-entity camera position="0 1.6 0" look-controls></a-entity>
+        </a-entity>
+    </a-scene>
+</body>
+
+</html>
