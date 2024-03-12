@@ -4,4 +4,5 @@
 * [labyrinthe2](./labyrinthemixins.html)
 * [suzanne](./suzanne_glb.html)
 * [what a mess](./what_a_mess.html)
+* [archi](./volume2archi.html)
  
