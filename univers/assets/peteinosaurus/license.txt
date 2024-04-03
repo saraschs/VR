@@ -1,0 +1,11 @@
+Model Information:
+* title:	peteinosaurus
+* source:	https://sketchfab.com/3d-models/peteinosaurus-d471546e95c4488e88d055c196d6ab67
+* author:	seth the yutyrannus (https://sketchfab.com/slang107123456789)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "peteinosaurus" (https://sketchfab.com/3d-models/peteinosaurus-d471546e95c4488e88d055c196d6ab67) by seth the yutyrannus (https://sketchfab.com/slang107123456789) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
