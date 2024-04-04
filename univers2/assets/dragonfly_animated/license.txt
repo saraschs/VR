@@ -1,0 +1,11 @@
+Model Information:
+* title:	Dragonfly_Animated
+* source:	https://sketchfab.com/3d-models/dragonfly-animated-3801ebeffdfc4f37bc251659f1d46f4f
+* author:	Mahmoud.Moh (https://sketchfab.com/Mahmoud.Moh)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Dragonfly_Animated" (https://sketchfab.com/3d-models/dragonfly-animated-3801ebeffdfc4f37bc251659f1d46f4f) by Mahmoud.Moh (https://sketchfab.com/Mahmoud.Moh) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
