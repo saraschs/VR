@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image 360° avec A-Frame</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <style>
+      body, html {
+        margin: 0;
+        height: 100%;
+        overflow: hidden;
+      }
+      #scene {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <a-scene>
+      <!-- Préchargement de l'image 360° -->
+      <a-assets>
+        <img id="image360" src="./assets/Sanches_1.jpg">
+      </a-assets>
+
+      <!-- Affichage de l'image 360° dans la scène avec a-sky -->
+      <a-sky src="#image360" rotation="0 -90 0"></a-sky>
+
+      <!-- Ajout d'un plan horizontal à la position (0, 0, 0) -->
+      <!-- <a-plane position="0 0 -5" rotation="-90 0 0" width="10" height="10" color="#808080" opacity="0.7"></a-plane> -->
+    </a-scene>
+  </body>
+</html>
