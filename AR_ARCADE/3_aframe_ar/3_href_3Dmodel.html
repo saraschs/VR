@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détection de marqueur AR.js</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar-nft.min.js"></script>
+    <script>
+        AFRAME.registerComponent('clickable', {
+            init: function () {
+                this.el.addEventListener('click', () => {
+                    window.location.href = 'https://ensaama.net/site/home/formations/dnmade/numerique-expriences-narratives-et-interactives';
+                });
+            }
+        });
+    </script>
+</head>
+
+<body style="margin: 0; overflow: hidden;">
+    <a-scene embedded arjs='trackingMethod: best;debugUIEnabled: false; patternRatio: 0.75'>
+
+        <!-- <a-marker type="pattern" url="./assets/demo.patt">
+            <a-box position='0 0 0' rotation="45 45 45" material='color: red;' depth="0.5" height="0.5" width="0.5"
+                class="clickable" clickable>
+            </a-box>
+        </a-marker> -->
+
+        <!-- Préchargement des ressources -->
+        <a-assets>
+            <a-asset-item id="objModel" src="./assets/3Dmodels/demo.obj"></a-asset-item>
+            <a-asset-item id="mtlModel" src="./assets/3Dmodels/demo.mtl"></a-asset-item>
+        </a-assets>
+        
+        <!-- Marqueur AR basé sur un fichier pattern -->
+        <a-marker type="pattern" url="./assets/patterns/demo.patt">
+            <!-- Utilisation du modèle 3D préchargé -->
+            <a-obj-model src="#objModel" mtl="#mtlModel" 
+                position="0 0 0" scale="0.2 0.2 0.2" rotation="-90 -45 0"
+                class="clickable" clickable>
+            </a-obj-model>
+
+            <!-- axes X, Y, Z pour ajuster plus facilement la position -->
+            <!-- <a-entity line="start: 0 0 0; end: 1 0 0; color: red"></a-entity> 
+            <a-entity line="start: 0 0 0; end: 0 1 0; color: green"></a-entity> 
+            <a-entity line="start: 0 0 0; end: 0 0 1; color: blue"></a-entity>  -->
+        </a-marker>
+
+        <a-entity camera raycaster="objects: .clickable; near: 0.1; far: 3">
+            <a-cursor rayOrigin="mouse"></a-cursor>
+        </a-entity>
+
+    </a-scene>
+</body>
+
+</html>
