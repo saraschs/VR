@@ -3,8 +3,8 @@
 ### AR_ARCADE
 
 #### liens
-* [0_marker (pattern ratio 0.75)](./0_marker.html)
-* [1_href_direct](./1_href_direct.html)
+* [0_marker (pattern ratio 0.75)](./0_marker_sanches.html)
+* [1_href_direct](./1_href_direct_sanches.html)
 * [2_href_primitive](./2_href_primitive.html)
 * [3_href_3Dmodel](./3_href_3Dmodel.html)
 
