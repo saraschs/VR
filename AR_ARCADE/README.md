@@ -10,6 +10,6 @@
 
 
 #### ressources
-* [image marker demo (pattern ratio 0.75)](./AR_ARCADE/2_marker/demo.png)
-* [pdf marker demo (pattern ratio 0.75)](./AR_ARCADE/2_marker/demo.pdf)
+* [image marker demo (pattern ratio 0.75)](./2_marker/demo.png)
+* [pdf marker demo (pattern ratio 0.75)](./2_marker/demo.pdf)
 * [qr code generator](https://www.qr-code-generator.com/)
