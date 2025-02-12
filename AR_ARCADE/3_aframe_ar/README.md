@@ -10,6 +10,6 @@
 
 
 #### ressources
-* [image marker demo (pattern ratio 0.75)](./3_aframe_ar/assets/images/sanches.png)
-* [pdf marker demo (pattern ratio 0.75)](./3_aframe_ar/assets/pdf/sanches.pdf)
+* [image marker demo (pattern ratio 0.75)](./assets/images/sanches.png)
+* [pdf marker demo (pattern ratio 0.75)](./assets/pdf/sanches.pdf)
 * [qr code generator](https://www.qr-code-generator.com/)
